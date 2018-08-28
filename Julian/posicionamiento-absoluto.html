@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .caja {
+            width: 100px;
+            height: 100px;
+        }
+
+        .azul {
+            background-color: blue;
+            position: static;
+            right: 0;
+            /* left: 300px; */
+            bottom: 50%;
+        }
+
+        .roja {
+            background-color: tomato;
+        }
+        .contenedor{
+            /* utiliza la posicion */
+            background-color: gray;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            margin-left: 100px; 
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="caja azul contenedor">toma el valor del padre superior</div>
+        <div class="caja roja"></div>
+    </div>
+</body>
+
+</html>
