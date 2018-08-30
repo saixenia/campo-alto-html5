@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- dasdaf -->
+
+    <script>
+        if (true) {
+            console.log('Es verdadero')
+        }
+        else {
+            console.log('Es falso')
+
+        }
+        var contrasena = "";
+        if (contrasena) {
+
+            console.log('Es verdadero contraseña')
+        }
+        else {
+            console.log('Es falso  contraseña')
+
+        }
+        var dia = "lunes";
+        console.log(dia)
+        switch (dia) {
+            case "lunes":
+                console.log("dia lunes")
+                break;
+
+            default:
+                console.log("dia martes")
+                break;
+        }
+        var x = 0;
+        while (x < 10) {
+            x = x + 1;
+            console.log(x);
+        }
+
+        var y=10;
+       do {
+           y--;
+            console.log(y);
+        } while (y >0)  
+        var array=["lunes","martes"]
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            console.log(element);
+        }
+        for(let dia of array){
+            console.log(dia)
+        }
+        array.forEach(function (dia) {
+            console.log(dia)
+        })
+        // para un solo parametro
+        array.forEach( dia=>
+        console.log(dia))
+
+        array.forEach((dia,index)=>
+        {
+            var objeto={valor:"1"};
+        });
+        var celular={
+            marca:"sansumg",
+            modelo:2010
+        }
+        for(const key in celular){
+            console.log(celular[key]);
+        } 
+
+       // console.log(dia))
+
+
+
+    </script>
+</body>
+
+</html>
