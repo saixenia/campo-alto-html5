@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    .tarjeta{
-        width: 200px;
-        height: 200px;
-        background-color: yellowgreen;
-    }
+        .tarjeta {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            /* agregar el margin al moneto de crear mas tarjetas */
+            margin: 5px;
+        }
+        #contenedor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-items: center;
+            /* justify-content: center; */
+            /* space-around */
+        }
     </style>
+    
+    
+        <!-- // para que ejecute desde el inicio
+        // // window.onload = function() {es igual window.onload = () => {
+        // window.onload = () => {
+        //     var tarjeta = document.getElementById('tarjeta')
+        //     console.log(tarjeta)
+        // } -->
+    
 </head>
+
 <body>
-    <div class="tarjeta"></div>
+    <button id="crear">Crear Tarjeta</button>
+    <div id="contenedor">
+    <div class="tarjeta" id="tarjeta">
+
+    </div>
+</div>
+    <!-- referencia del objeto  -->
+    <!-- oara encnotrar por tag  -->
+    <!-- document.getElementsByTagName('div') -->
+    <!-- cambio del estilo de color de fondo
+    document.getElementsByTagName('div')[0].style.backgroundColor="red" -->
+    <!-- mejor practica  -->
+    <!-- <script>
+        window.onload = () => {
+        var tarjeta = document.getElementById('tarjeta')
+        console.log(tarjeta);
+        }
+    </script> -->
+
+    <script src="tarjeta.js"></script>
 </body>
+
 </html>
