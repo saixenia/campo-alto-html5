@@ -7,25 +7,118 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Julian Rodriguez Cristancho</title>
     <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .contenido {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .menuitem {
+            color: white;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        a:link {
+            color: white;
+            text-decoration-line: none;
+        }
+
+        a:visited {
+
+            color: wheat;
+        }
+
+        .parrafo-centrado {
+            background-color: gre;
+            color: azure;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
         <header>
-            <div class="contenedor">
-                <div>Acerca de mi</div>
-                <div>Habilidades</div>
-                <div>Educacion</div>
-                <div>Portafolio</div>
-                <div>Certificaciones</div>
-                <div>Experiencia</div>
+            <div class="flex-container">
+                <div class="menuitem"><a href="#acerca_de_mi">Acerca de mi</a></div>
+                <div class="menuitem"><a href="#habilidades">Habilidades</a> </div>
+                <div class="menuitem"><a href="#educacion">Educacion</a> </div>
+                <div class="menuitem"><a href="#portafolio">Portafolio</a> </div>
+                <div class="menuitem"><a href="#certificaciones">Certificaciones</a> </div>
+                <div class="menuitem"><a href="#experiencia">Experiencia</a> </div>
             </div>
         </header>
         <main>
-
+            <section>
+                <div class="contenido">
+                    <div class="flex-container">
+                        <div id="#acerca_de_mi">Acerca de mi</div>
+                        <div>
+                            <p class="parrafo-centrado">Soy una persona comprometida con las tareas asignadas, buena actitud
+                                y comunicación. Me gustan los retos y desafíos personales como profesionales. Adicionalmente
+                                manejo de inglés intermedio
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div id="#habilidades"></div>
+                        <div></div>
+                    </div>
+                    <div class="flex-container">
+                        <div id="#educacion"></div>
+                        <div></div>
+                    </div>
+                    <div class="flex-container">
+                        <div id="#portafolio"></div>
+                        <div></div>
+                    </div>
+                    <div class="flex-container">
+                        <div id="#certificaciones"></div>
+                        <div></div>
+                    </div>
+                    <div class="flex-container">
+                        <div id="experiencia">
+                            <p><span>EXPERIENCIA EN CAMPO PROFESIONAL</span></p>
+                            <p><span>De 17 Diciembre de 2012 - 13 junio 2013. Colombia, Bogotá</span></p>
+                            <p><span>CÁMARA DE COMERCIO BOGOTÁ</span></p>
+                            <p><span>Dirección: Avenida 26 &nbsp;# 68 D-25</span></p>
+                            <p><span>Teléfono: 5941000</span></p>
+                            <p><span>Cargo: Analista QA</span></p>
+                            <p><span>Jefe inmediato: Carlos Enrique Prieto</span></p>
+                            <p><span>Tareas realizadas: Realización y ejecución de escenarios de prueba para el aplicativo
+                                    de servicios REST para cámara de comercio. Apoyo en pruebas al aplicativo Sirep. consultas
+                                    SQL
+                                </span></p>
+                            <p><span>De 7 Julio de 2008.- 30 de Enero &nbsp;de 2010. Colombia, Bogotá</span></p>
+                            <p><span>CÁRDENAS EMERGENCIAS ELECTRICAS 24 HORAS</span></p>
+                            <p><span>Dirección: Calle 165 # 50</span></p>
+                            <p><span>Celular: 3105746520</span></p>
+                            <p><span>Cargo: ayudante electricista</span></p>
+                            <p><span>Jefe: Héctor Cárdenas Díaz</span></p>
+                            <p><span>Tareas realizadas: apoyo en herramientas y cableado de instalaciones eléctricas
+                                </span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
+
 </body>
 
 </html>
