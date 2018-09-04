@@ -7,9 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Julian Rodriguez Cristancho</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: black;
+            color: azure;
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .flex-container {
@@ -17,20 +29,26 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            align-content: center;
             width: 100%;
+
         }
 
         .contenido {
             width: 100%;
-            padding-left: 10px;
-            padding-right: 10px;
+            max-width: 80%;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin: 0 auto;
+
         }
 
         .menuitem {
+
             color: white;
             margin: auto;
             text-align: center;
-            font-size: 30px;
+            font-size: 26px;
         }
 
         a:link {
@@ -43,75 +61,224 @@
             color: wheat;
         }
 
+        a:hover {
+            background-color: brown;
+        }
+
         .parrafo-centrado {
-            background-color: gre;
-            color: azure;
+display: flex;
             justify-content: center;
         }
+
+        .menu-estatico {
+            background-color: rgb(110, 110, 110);
+            position: fixed;
+        }
+
+        .main {
+            margin-top: 5%;
+
+        }
+
+
+        .columna-izquierda {
+            width: 18%;
+        }
+
+        .columna-derecha {
+            width: 60%;
+        }
+
+
+        ul {
+            list-style-type: none;
+            background-color: rgb(107, 133, 124);
+            border-radius: 15%; 
+        }
+
+        img {
+            width: 90%;
+            height: 90%;
+            border-radius: 20%;
+        }
+
+        img:hover {
+            opacity: 0.5;
+        }
+
+        .tarjeta-inicial {
+            padding-top: 3%;
+            background-color: rgb(83, 95, 59);
+            border-radius: 20px;
+        }
+
+        .tarjeta {
+            background-color: rgb(83, 95, 59);
+            padding: 1% 1% 1% 1%;
+        }
+
+        .tarjeta-titulo {
+            background-color: brown;
+
+        }
+
+        div.borde {
+            border: 4px dashed rgb(83, 95, 59);
+        }
+
+        div.borde-blanco {
+            border: 3px dotted whitesmoke;
+            padding-left: 1%;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row,
+            .menu-estatico {
+                flex-direction: column;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
     </style>
+
 </head>
 
 <body>
-    <div class="main">
-        <header>
-            <div class="flex-container">
-                <div class="menuitem"><a href="#acerca_de_mi">Acerca de mi</a></div>
-                <div class="menuitem"><a href="#habilidades">Habilidades</a> </div>
-                <div class="menuitem"><a href="#educacion">Educacion</a> </div>
-                <div class="menuitem"><a href="#portafolio">Portafolio</a> </div>
-                <div class="menuitem"><a href="#certificaciones">Certificaciones</a> </div>
-                <div class="menuitem"><a href="#experiencia">Experiencia</a> </div>
+    <div class="row">
+        <header class="">
+            <div class="flex-container menu-estatico">
+                <div class="menuitem"><a href="#acerca_de_mi">ACERCA DE MI</a></div>
+                <div class="menuitem"><a href="#habilidades">HABILIDADES</a> </div>
+                <div class="menuitem"><a href="#educacion">EDUCACIÓN</a> </div>
+                <!-- <div class="menuitem"><a href="#portafolio">Portafolio</a> </div> -->
+                <div class="menuitem"><a href="#certificaciones">CERTIFICACIONES</a> </div>
+                <div class="menuitem"><a href="#experiencia">EXPERIENCIA</a> </div>
             </div>
         </header>
-        <main>
+        <main id="acerca_de_mi">
             <section>
-                <div class="contenido">
-                    <div class="flex-container">
-                        <div id="#acerca_de_mi">Acerca de mi</div>
-                        <div>
+                <div class="contenido main" >
+                    <div class="flex-container main tarjeta-inicial" >
+                        <div class="columna-izquierda">
+                            <img src="imagenes_cv/jul.jpg" alt="Julian Rodriguez">
+                        </div>
+                        <div class="columna-derecha">
+                            <h3>Saludos! </h3>
+                            <h3 style="margin-top:3%">Soy, Julian Rodriguez</h3>
                             <p class="parrafo-centrado">Soy una persona comprometida con las tareas asignadas, buena actitud
                                 y comunicación. Me gustan los retos y desafíos personales como profesionales. Adicionalmente
                                 manejo de inglés intermedio
                             </p>
+                            <ul>
+                                <li><span><b>Edad:</b> </span> <span> 26</span></li>
+                                <li><span><b>Dirección:</b> </span><span> Calle 23 A #96J-20 apto 303</span></li>
+                                <li><span><b>Email:</b> </span> <span>jarodriguez601@gmail.com</span></li>
+                                <li><span><b>Telefono:</b></span><span> 3133707721</span></li>
+                                <li><span><b>Redes:</b></span> <span><a href="​https://goo.gl/hPqD69" target="_blank" title="Linked de Julian">Linked </a></span>
+                                <span><a href="​​https://github.com/saixenia" target="_blank" title="Github de Julian">Github</a></span></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="flex-container">
-                        <div id="#habilidades"></div>
-                        <div></div>
+                    <div class="flex-container" id="habilidades">
+                        <div class="main tarjeta-titulo">
+                            <h1>HABILIDADES</h1>
+                        </div>
+                        <div class="borde">
+                            <p>SQL,Microsoft Office,Software Testing,Software Development,Service Client,Project Management,SCRUM</p>
+                        </div>
                     </div>
-                    <div class="flex-container">
-                        <div id="#educacion"></div>
-                        <div></div>
+                    <div class="flex-container  " id="educacion">
+                        <div class="main tarjeta-titulo ">
+                            <h1>EDUCACIÓN</h1>
+                        </div>
                     </div>
-                    <div class="flex-container">
-                        <div id="#portafolio"></div>
-                        <div></div>
+                    <div class="tarjeta">
+                        <div class="borde-blanco">
+                            <h3 class="parrafo-centrado"> Ingeniería de sistemas</h3>
+                            <p class="parrafo-centrado">Universidad de Bogotá Jorge Tadeo Lozano</p>
+                            <p class="parrafo-centrado">Bogotá,Julio 2014 Actualmente</p>
+                        </div>
+
+                        <div class="borde-blanco">
+                            <h3 class="parrafo-centrado">Análisis y desarrollo de sistemas de información</h3>
+                            <p class="parrafo-centrado">SENA</p>
+                            <p class="parrafo-centrado">Bogotá, Julio 2011- Junio 2013 </p>
+                        </div>
+                        <div class="borde-blanco">
+                            <h3 class="parrafo-centrado">Variables y estructuras de Control en la Programación orientada a objetos</h3>
+                            <p class="parrafo-centrado">SENA</p>
+                            <p class="parrafo-centrado">01/Junio/2011- 30/Junio/2011</p>
+                        </div>
+                        <div class="borde-blanco ">
+                            <h3 class="parrafo-centrado">Linux: Sistema Operativo, Comandos y Utilidad</h3>
+                            <p class="parrafo-centrado">SENA</p>
+                            <p class="parrafo-centrado">02/Mayo/2011- 30/Mayo/2011</p>
+                        </div>
+                        <div class="borde-blanco">
+                            <h3 class="parrafo-centrado">Técnicas de comunicación en el Nivel Técnico</h3>
+                            <p class="parrafo-centrado">SENA</p>
+                            <p class="parrafo-centrado">21/Mayo/2011- 21/Junio/2011</p>
+                        </div>
+                        <div class="borde-blanco">
+                            <h3 class="parrafo-centrado">Informática: Diseño de bases de datos en SQL</h3>
+                            <p class="parrafo-centrado">SENA</p>
+                            <p class="parrafo-centrado">21/Mayo/2011- 21/Junio/2011</p>
+                        </div>
+
+                        <div class="borde-blanco">
+                            <h3 class="parrafo-centrado">Curso Especial En Inglés Básico 2</h3>
+                            <p class="parrafo-centrado">SENA</p>
+                            <p class="parrafo-centrado">10-dic-2010</p>
+                        </div>
+
+                        <div class="borde-blanco">
+                            <h3 class="parrafo-centrado">Manejo de Herramientas Ofimáticas: Microsoft Excel</h3>
+                            <p class="parrafo-centrado">SENA</p>
+                            <p class="parrafo-centrado">05/Abril/2010- 05/May/2010</p>
+                        </div>
+
+                        <div class="borde-blanco">
+                            <h3 class="parrafo-centrado">Bachiller Énfasis Técnico</h3>
+                            <p class="parrafo-centrado">Instituto Técnico Industrial Centro Don Bosco</p>
+                            <p class="parrafo-centrado">Bogotá, 2008</p>
+                        </div>
                     </div>
-                    <div class="flex-container">
-                        <div id="#certificaciones"></div>
-                        <div></div>
+                    <div class="flex-container" id="certificaciones">
+                        <div class="main tarjeta-titulo">
+                            <h1>CERTIFICACIONES</h1>
+                        </div>
                     </div>
-                    <div class="flex-container">
-                        <div id="experiencia">
-                            <p><span>EXPERIENCIA EN CAMPO PROFESIONAL</span></p>
-                            <p><span>De 17 Diciembre de 2012 - 13 junio 2013. Colombia, Bogotá</span></p>
-                            <p><span>CÁMARA DE COMERCIO BOGOTÁ</span></p>
-                            <p><span>Dirección: Avenida 26 &nbsp;# 68 D-25</span></p>
-                            <p><span>Teléfono: 5941000</span></p>
-                            <p><span>Cargo: Analista QA</span></p>
-                            <p><span>Jefe inmediato: Carlos Enrique Prieto</span></p>
-                            <p><span>Tareas realizadas: Realización y ejecución de escenarios de prueba para el aplicativo
-                                    de servicios REST para cámara de comercio. Apoyo en pruebas al aplicativo Sirep. consultas
-                                    SQL
-                                </span></p>
-                            <p><span>De 7 Julio de 2008.- 30 de Enero &nbsp;de 2010. Colombia, Bogotá</span></p>
-                            <p><span>CÁRDENAS EMERGENCIAS ELECTRICAS 24 HORAS</span></p>
-                            <p><span>Dirección: Calle 165 # 50</span></p>
-                            <p><span>Celular: 3105746520</span></p>
-                            <p><span>Cargo: ayudante electricista</span></p>
-                            <p><span>Jefe: Héctor Cárdenas Díaz</span></p>
-                            <p><span>Tareas realizadas: apoyo en herramientas y cableado de instalaciones eléctricas
-                                </span></p>
+                    <div class="borde">
+                        <p>Programming in HTML5 with JavaScript and CSS3</p>
+                        <p>Software development Fundamentals</p>
+                    </div>
+                    <div class="flex-container" id="experiencia">
+                        <div class="main tarjeta-titulo">
+                            <h1>EXPERIENCIA</h1>
+                        </div>
+                        <div class="tarjeta ">
+                            <div class="borde-blanco">
+                               <h3  class="parrafo-centrado">CÁMARA DE COMERCIO BOGOTÁ</h3>
+                                <p><span>De 17 Diciembre de 2012 - 13 junio de 2013. Colombia, Bogotá</span></p>
+                                <p><span>Dirección: Avenida 26 # 68 D-25</span></p>
+                                <p><span>Teléfono: 5941000</span></p>
+                                <p><span>Cargo: Analista QA</span></p>
+                                <p><span>Jefe inmediato: Carlos Enrique Prieto</span></p>
+                                <p><span>Tareas realizadas: Realización y ejecución de escenarios de prueba para el aplicativo
+                                        de servicios REST para cámara de comercio. Apoyo en pruebas al aplicativo Sirep.
+                                        consultas SQL
+                                    </span></p>
+                            </div>
+                            <div class="borde-blanco">
+                                <h3  class="parrafo-centrado">CÁRDENAS EMERGENCIAS ELECTRICAS 24 HORAS</h3>
+                                <p><span>De 7 Julio de 2008 - 30 de Enero de 2010. Colombia, Bogotá</span></p>
+                                <p><span>Dirección: Calle 165 # 50</span></p>
+                                <p><span>Celular: 3105746520</span></p>
+                                <p><span>Cargo: ayudante electricista</span></p>
+                                <p><span>Jefe: Héctor Cárdenas Díaz</span></p>
+                                <p><span>Tareas realizadas: apoyo en herramientas y cableado de instalaciones eléctricas
+                                    </span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
